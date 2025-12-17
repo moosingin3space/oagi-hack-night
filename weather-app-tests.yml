@@ -1,0 +1,8 @@
+- task_statement: >-
+    Get the current temperature in San Francisco.
+  success_criteria: >-
+    Temperature is displayed and makes sense in whatever scale it is.
+- task_statement: >-
+    Determine if it's raining in San Francisco.
+  success_criteria: >-
+    Rain, or lack thereof, is displayed in an intuitive way.
