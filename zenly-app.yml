@@ -1,5 +1,5 @@
 - task_statement: >-
-    Get the current temperature in San Francisco from the native weather application already open.
+    Open Zenly, and 
   success_criteria: >-
     Temperature is displayed and makes sense in whatever scale it is.
 - task_statement: >-
