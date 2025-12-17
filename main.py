@@ -53,10 +53,14 @@ async def main():
 
     test_cases = parse_test_cases(args.yaml_file)
     print(f"Loaded {len(test_cases)} test cases")
+    
+    results = []
     for i, tc in enumerate(test_cases, 1):
-
         print(f"  {i}. {tc.task_statement[:50]}...")
-        await manual_tester.process_test_case(tc.task_statement, tc.success_criteria, i)
+        result = await manual_tester.process_test_case(tc.task_statement, tc.success_criteria, i)
+        results.append(result)
+    
+    manual_tester.print_summary(results)
 
 
 if __name__ == "__main__":
